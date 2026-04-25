@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Example</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: scroll;
+            /* Change this to visible, hidden, scroll to see different behaviors */
+            text-overflow: ellipsis;
+            /*white-space: nowrap;
+            /*white-space used with nowrap for single line text*/
+        }
+
+        .content {
+            width: 300px;
+            height: 150px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Overflow Property Example</h1>
+    <div class="container">
+        <div class="content">
+            This is some content that exceeds the size of its container. Depending on the overflow property set on the
+            container, you may see scrollbars, hidden content, or the content spilling out.
+        </div>
+    </div>
+</body>
+
+</html>

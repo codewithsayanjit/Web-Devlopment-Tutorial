@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors (Internal)</title>
+    <style>
+        /* Class CSS Selector */
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* ID CSS Selector */
+        #unique {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /* Child CSS Selector */
+        div>p {
+            color: red;
+        }
+
+        /* Descendant CSS Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /*Universal CSS Selector */
+        * {
+            padding: 0;
+        }
+
+        /*Pseudo-class CSS Selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:hover {
+            background-color: rgb(103, 219, 217);
+        }
+
+        p:first-child {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="highlight">This is a highlighted heading using Class CSS</h1>
+    <p id="unique">This paragraph has a unique style applied to it.</p>
+    <p>This is a normal paragraph without any special styling.</p>
+    <div>
+        <p>This paragraph is inside a div using child and descendent CSS selector.</p>
+    </div>
+    <div>
+        <article>
+            <p>This paragraph is inside an article within a div using descendant CSS selector.</p>
+        </article>
+    </div>
+    <a href="https://www.github.com" target="_blank">Go to the GitHub.</a><br /><br />
+    <a href="https://www.example.com">Go to Example.com.</a>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+
+    </main>
+</body>
+
+</html>

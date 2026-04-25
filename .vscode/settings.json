@@ -1,0 +1,24 @@
+{
+  "peacock.color": "#F9547C",
+  "livePreview.defaultPreviewPath": "/My Bookmark/index.html",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#fb85a2",
+    "activityBar.background": "#fb85a2",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#d0fdc1",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#fb85a2",
+    "statusBar.background": "#f9547c",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#f72356",
+    "statusBarItem.remoteBackground": "#f9547c",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#f9547c",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#f9547c99",
+    "titleBar.inactiveForeground": "#15202b99"
+  }
+}

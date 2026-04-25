@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity(Internal)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+
+        h1 {
+            color: #1479d1;
+        }
+
+        ol {
+            color: red;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Specificity</h1>
+    <p>This document provides an overview of CSS specificity rules.</p>
+
+    <h2>Specificity Rules</h2>
+    <p>CSS specificity determines which styles are applied to an element when multiple rules match it:</p>
+    <ol>
+        <li>Important Selector( highest specificity) <br /> Syntax: &nbsp; !important
+            <p>
+                Example: &nbsp; color: red !important;<br />
+                The Specificity of !important is higher than any other specificity.<br />
+                The Specificity of Important Selector is considered as 10000.<br />
+            </p>
+        </li>
+        <li>Inline styles (higher specificity)
+            <p>
+                The Specificity of Inline Style is 1000.<br />
+            </p>
+        </li>
+        <li>ID selectors
+            <p>
+                The Specificity of ID Selector is 100.<br />
+            </p>
+        </li>
+        <li>Class selectors, attribute selectors, and pseudo-classes
+            <p>
+                The Specificity of Class Selector is 10.<br />
+            </p>
+        </li>
+        <li>Element selectors and pseudo-elements (lowest specificity)
+            <p>
+                The Specificity of Element Selector is 1.<br />
+            </p>
+        </li>
+        <li>Universal selector (*) has no specificity
+            <p>
+                The Specificity of Universal Selector is 0.<br />
+            </p>
+        </li>
+    </ol>
+    <h2>Specificity Calculation</h2>
+    <p>To calculate the specificity of a selector, sum the values based on the rules above. The specificity is represented as a four-part value (a,b,c,d), where:</p>
+    <ul>
+        <li>a = number of inline styles</li>
+        <li>b = number of ID selectors</li>
+        <li>c = number of class selectors, attribute selectors, and pseudo-classes</li>
+        <li>d = number of element selectors and pseudo-elements</li>
+    </ul>
+    <p>For example, the selector <code>div#header .nav li:hover</code> has a specificity of (1+100+10+10+1) = 122:</p>
+    <ul>
+        <li>1 ID selector (#header) = 100</li>
+        <li>1 class selector (.nav) = 10</li>
+        <li>1 pseudo-class (:hover) = 10</li>
+        <li>2 element selectors (div, li) = 1 + 1 = 2</li>
+    </ul>
+    <p>Thus, the total specificity is 100 + 10 + 10 + 2 = 122.</p>
+</body>
+
+</html>
