@@ -21,8 +21,13 @@
             div.innerHTML = "I have been inserted <b>by Sayanjit</b>"
             div.setAttribute("class", "created");
             document.querySelector(".container").after(div);
+
+
             let cont = document.querySelector(".container")
-            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+            cont.insertAdjacentHTML("beforebegin", "<b>beforebegin :  Insert HTML immediately Before the element</b>")
+            cont.insertAdjacentHTML("afterbegin", "<b>afterbegin : Insert HTML into element at the beginning</b>")
+            cont.insertAdjacentHTML("beforeend", "<b>beforeend : Insert HTML into element at the end</b>")
+            cont.insertAdjacentHTML("afterend", "<b>afterend : Insert HTML immediately After the element</b>")
         </script>
     </div>
 </body>
