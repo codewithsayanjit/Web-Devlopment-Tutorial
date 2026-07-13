@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model (Internal)</title>
+    <style>
+        .box1 {
+            color: yellow;
+            background-color: lightblue;
+            padding: 10px;
+            /* Padding between content and border */
+            border: 5px solid blue;
+            /* Border between padding and margin */
+            margin: 30px;
+            /* Margin outside the border */
+            height: 100px;
+            /* The total height will be calculated as:
+               height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
+            box-sizing: border-box;
+            /* Box sizing set to border-box to include padding and border in the element's total size */
+        }
+
+        .box2 {
+            color: black;
+            background-color: aquamarine;
+            padding: 10px;
+            /* Padding between content and border */
+            border: 5px solid red;
+            /* Border between padding and margin */
+            margin: 25px;
+            /* Margin outside the border */
+            height: 100px;
+            /* The total height will be calculated as:
+               height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
+            width: 500px;
+            /* The total width will be calculated as:
+               width + left padding + right padding + left border + right border + left margin + right margin */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        This is the first content area.
+    </div>
+    <div class="box box2">
+        This is the second content area.
+    </div>
+</body>
+
+</html>

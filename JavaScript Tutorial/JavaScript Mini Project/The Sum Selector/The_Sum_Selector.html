@@ -1,0 +1,28 @@
+<!-- The Sum Selector: You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Sum numbers until a negative number appears
+        function sumSelector(arr) {
+            let sum = 0;
+            for (let num of arr) {
+                if (num < 0) break;  // stop at negative number
+                sum += num;     // // add current number
+            }
+            return sum;
+        }
+
+        console.log(sumSelector([10, 20, 30, -5, 40])); // 60
+    </script>
+</body>
+
+</html>

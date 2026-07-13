@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        /*Global Variable*/
+        :root {
+            --color: rgb(234, 15, 219); /*Declare Variable*/
+            --seccolor: rgb(243, 130, 105);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color)
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 34px;
+        }
+
+        ul li:first-child {
+            /*Local Variable*/
+            --seccolor: rgb(70, 28, 237);
+            color: var(--seccolor);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br />
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br />
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br />
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br />
+    </div>
+</body>
+
+</html>

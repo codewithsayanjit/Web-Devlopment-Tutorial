@@ -1,0 +1,33 @@
+{
+  "name": "web_development_tutorial",
+  "version": "1.0.0",
+  "description": "This is a Web Development Tutorial for Beginners",
+  "keywords": [
+    "web",
+    "development",
+    "tutorial"
+  ],
+  "homepage": "https://github.com/codewithsayanjit/Web-Devlopment-Tutorial#readme",
+  "bugs": {
+    "url": "https://github.com/codewithsayanjit/Web-Devlopment-Tutorial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithsayanjit/Web-Devlopment-Tutorial.git"
+  },
+  "license": "ISC",
+  "author": "Sayanjit Jana",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.4.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "slugify": "^1.6.9"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows & Outline(Internal)</title>
+    <style>
+        .box-shadow {
+            box-shadow: 10px 10px 5px rgb(113, 162, 218) ;
+            /* box-shadow: h-offset v-offset blur spread color */
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border-color:blueviolet;
+            border-radius: 15px;
+            background-color: lightblue;
+        }
+
+        .text-shadow {
+            text-shadow: 5px 2px 5px rgb(16, 214, 211);
+            /* text-shadow: h-offset v-offset blur color */
+        }
+
+        .outline {
+            outline: 2px solid red;
+            border: 2px solid yellow;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Shadows & Outline Example</h1>
+    <div class="box-shadow">
+        This div has a box shadow.
+    </div>
+    <h2 class="text-shadow">This heading has a text shadow.</h2>
+    <div class="outline">
+        This div has an outline.
+    </div>
+</body>
+
+</html>

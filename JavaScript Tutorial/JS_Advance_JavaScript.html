@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript Demo</title>
+</head>
+
+<body>
+
+    <script>
+
+        // HOISTING EXAMPLE
+        // 'var' declarations are hoisted.Let and Const are not hosted in JavaScript. They are block scoped and cannot be accessed before declaration.
+        // Initialization stays in its original place.
+        console.log("Value of a1 before declaration:", a1);
+
+        var a1 = 6;
+
+        // ASYNC FUNCTION
+        // Returns 45 after 1 second
+        const sleep = async () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(45);
+                }, 1000);
+            });
+        };
+
+
+        // ASYNC SUM FUNCTION
+        const sum = async (a, b, c) => {
+            return a + b + c;
+        };
+
+        // IIFE (Immediately Invoked Function Expression)
+        // Runs immediately after being defined.
+        // Useful for async/await and avoiding global variables.
+
+        (async function main() {
+            console.log("Inside IIFE");
+            // ASYNC / AWAIT
+            let a = await sleep();
+            console.log("First sleep result:", a);
+            let b = await sleep();
+            console.log("Second sleep result:", b);
+
+            // ARRAY DESTRUCTURING
+            let [x, y, ...rest] = [1, 5, 7, 8, 9, 10];
+
+            console.log("x =", x);       // 1
+            console.log("y =", y);       // 5
+            console.log("rest =", rest); // [7,8,9,10]
+
+
+            // OBJECT DESTRUCTURING
+            let obj = {
+                a: 1,
+                b: 2,
+                c: 3
+            };
+
+            let { a: num1, b: num2 } = obj;
+
+            console.log("num1 =", num1);
+            console.log("num2 =", num2);
+
+
+            // SPREAD OPERATOR
+            let arr = [1, 4, 6];
+
+            // Normal call
+            console.log(
+                "Normal Function Call:",
+                await sum(arr[0], arr[1], arr[2])
+            );
+
+            // Spread operator call
+            console.log(
+                "Spread Operator Call:",
+                await sum(...arr)
+            );
+
+        })();
+
+    </script>
+
+</body>
+
+</html>

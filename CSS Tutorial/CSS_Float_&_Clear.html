@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        .clear-left {
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Float & Clear Example</h1>
+    <div style="width: 100%; border: 1px solid black; padding: 10px;">
+        <div class="float-left" style="width: 30%; background-color: lightblue; padding: 10px; margin-right: 10px;">
+            This box is floated to the left.
+        </div>
+        <div class="float-right" style="width: 30%; background-color: lightgreen; padding: 10px;">
+            This box is floated to the right.
+        </div>
+        <div class="clear-both" style="background-color: lightgray; padding: 10px; margin-top: 10px;">
+            This box clears both floats and appears below the floated elements.
+        </div>
+        <div class="clear-left" style="background-color: lightcoral; padding: 10px; margin-top: 10px;">
+            This box clears the left float and appears below the left-floated element.
+    </div>
+</body>
+
+</html>

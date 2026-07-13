@@ -1,0 +1,21 @@
+<!-- The Mirror Mirror: Imagine you have a string, and you need to create a new string that is a mirror image of the original. Write a function that appends the reversed version of the original string to itself. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mirror Mirror</title>
+</head>
+<body>
+<script>
+    // Append reverse of string to itself
+    function mirrorString(str) {
+        //split('') : Converts the string into an array of characters.
+        // reverse() : Reverses the array.
+        // join('') : Joins the array back into a string.
+        return str + str.split('').reverse().join('');
+    }
+
+    console.log(mirrorString("Sayanjit")); // SayanjittijnayaS
+</script>
+</body>
+</html>

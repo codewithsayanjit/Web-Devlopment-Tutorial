@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>YouTube Card</title>
+
+    <style>
+        /* =========================
+           Main Card Container
+           ========================= */
+        .card {
+            /* Places image and text side by side */
+            display: flex;
+
+            /* Space outside the card */
+            margin: 1px;
+
+            /* Black border around card */
+            border: 2px solid black;
+
+            /* Fixed card width */
+            width: 900px;
+
+            /* Centers content horizontally */
+            justify-content: center;
+
+            /* Centers content vertically */
+            align-items: center;
+
+            /* Space inside the card */
+            padding: 1px;
+        }
+
+        /* =========================
+           Thumbnail Image
+           ========================= */
+        .image img {
+            /* Sets thumbnail width */
+            width: 200px;
+        }
+
+        /* =========================
+           Title and Paragraph
+           ========================= */
+
+        /* Adds top and bottom spacing */
+        .text h1,p {
+            padding: 1px 0;
+        }
+
+        /* =========================
+           Image Container
+           ========================= */
+        .image {
+            /* Makes .capsule position relative to image */
+            position: relative;
+        }
+
+        /* =========================
+           Video Duration Box
+           ========================= */
+        .image .capsule {
+            /* Allows free positioning */
+            position: absolute;
+
+            /* 4px from bottom of image */
+            bottom: 4px;
+
+            /* Keeps duration above image */
+            z-index: 10;
+
+            /* 2px from right side */
+            right: 2px;
+
+            /* Dark background */
+            background: #242020;
+
+            /* Slight transparency */
+            opacity: 0.9;
+
+            /* White text color */
+            color: white;
+
+            /* Space inside duration box */
+            padding: 3px;
+
+            /* Rounded corners */
+            border-radius: 7px;
+
+            /* Small text size */
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://scontent.fccu13-1.fna.fbcdn.net/v/t39.30808-1/468547492_545401021682673_3350463793003797956_n.jpg?stp=dst-jpg_tt6&cstp=mx960x957&ctp=s200x200&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=3MOBzP8XyfkQ7kNvwEstTlM&_nc_oc=AdpXn2aRiZp71iHdKc_YBBbSzH2w0Ro2x-JdSENozjtIzGcbe-Oy4nA1Pp_yTjEmuUfU4g7QwxJcutQprLHyoCj1&_nc_zt=24&_nc_ht=scontent.fccu13-1.fna&_nc_gid=E30xtmC-rzRGw32y33fd1A&_nc_ss=7b2a8&oh=00_AQCr8kA_-qjG6DI0pam5hMiydtgOxfoh33g0NiNYr6AyTw&oe=6A512D9F"
+                    alt="Thumbnail" />
+
+                <div class="capsule">31:06</div>
+            </div>
+
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev Video #2</h1>
+
+                <p>CodeWithSayanjit • 727K views • 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        .example {
+            top: 10px;
+            left: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            /* Exception:  Transform ,filter or perspective properties can also make an element as positioned */
+            /*
+            position: relative;
+            transform: translate(0);
+            filter: invert(0);
+            perspective: 0em;
+            */
+        }
+
+        .z-index {
+            position: relative;
+            z-index: 10;
+            /* Higher z-index means the element will be on top */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Position Property</h1>
+    <p>The CSS position property specifies the type of positioning method used for an element. It can take
+        several values:</p>
+    <ul>
+        <li>
+            <strong>static</strong>:
+            The default value. Elements are positioned according to the normal flow of the
+            document.
+        </li>
+        <li><strong>relative</strong>:
+            The element is positioned relative to its normal position. You can use the
+            <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties to adjust its
+            position.
+        </li>
+        <li>
+            <strong>absolute</strong>:
+            The element is positioned relative to its nearest positioned ancestor (an
+            ancestor with a position other than static). If there is no such ancestor, it is positioned relative to the
+            initial containing block (usually the viewport).
+        </li>
+        <li>
+            <strong>fixed</strong>:
+            The element is positioned relative to the viewport, which means it stays in the same
+            place even when the page is scrolled.
+        </li>
+        <li>
+            <strong>sticky</strong>:
+            The element is treated as relative until it crosses a specified threshold, at which
+            point it is treated as fixed.
+        </li>
+    </ul>
+    <h2>Example Usage</h2>
+    <pre><code>
+.example {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+    </code></pre>
+    <div class="example">This box is positioned absolutely.</div><br />
+    <!-- <div class="example">This box is positioned absolutely.</div> -->
+    <div>
+        <h2>Z-Index Example</h2>
+        <div class="z-index"
+            style="width:100px; height:100px; background-color:lightcoral; position:relative; z-index:5;">
+            This box has a lower z-index.
+        </div>
+        <div
+            style="width:100px; height:100px; background-color:lightgreen; position:relative; z-index:15; margin-top:-70px; margin-left:30px;">
+            This box has a higher z-index.
+        </div>
+    </div>
+</body>
+
+</html>

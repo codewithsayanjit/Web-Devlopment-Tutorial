@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts (Internal)</title>
+    <style>
+        /* Font Family */
+        .serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .sans-serif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .monospace {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+
+        /* Font Size */
+        .small-text {
+            font-size: 12px;
+        }
+
+        .medium-text {
+            font-size: 16px;
+        }
+
+        .large-text {
+            font-size: 24px;
+        }
+
+        /* Font Weight */
+        .light {
+            font-weight: 300;
+        }
+
+        .normal {
+            font-weight: 400;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        /* Font Style */
+        .italic {
+            font-style: italic;
+        }
+
+        /* Text Decoration */
+        .underline {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-decoration-color: blue;
+            text-decoration-thickness: inherit;
+        }
+
+        /* Text Transform */
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        /* Font Variant */
+        /*Display lowercase as small capital letters*/
+        .small-caps {
+            font-variant: small-caps;
+        }
+
+        /* Line Height */
+        .spaced {
+            line-height: 30px;
+            border: 2px solid blue;
+        }
+
+        /*Letter Spacing */
+        .letter-spacing {
+            letter-spacing: 5px;
+        }
+
+        /*Text Overflow*/
+        .overflow {
+            text-overflow: ellipsis;
+            overflow:hidden;
+            width: 75px;
+            border: 2px solid red;
+        }
+
+        /*Word Break*/
+        .word-break {
+            word-break: break-all;
+            width: 130px;
+            border: 2px solid green;
+        }
+
+        /*Text Align*/
+        .text-align {
+            text-align: center;
+        }
+
+        /*Word Spacing*/
+        .word-spacing {
+            word-spacing: 10px;
+        }
+
+        /*Text Indent*/
+        /*Indent the first line of a text*/
+        .text-indent {
+            text-indent: 30px;
+        }
+
+        /*White Space*/
+        .white-space {
+            white-space: nowrap;
+        }
+
+        /*Hyphens*/
+        .hyphens {
+            hyphens: auto;
+            border: 2px solid orange;
+        }
+
+        /*Font Variant Ligatures*/
+        .ligatures {
+            font-variant-ligatures: common-ligatures;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="serif large-text bold capitalize">This is a Serif Large Bold Capitalized Heading</h1>
+    <p class="sans-serif medium-text normal-style">This paragraph uses a Sans-Serif font with medium size and normal
+        style.</p>
+    <p class="monospace small-text light italic">This paragraph uses a Monospace font with small size, light weight, and
+        italic style.</p>
+    <p class="small-text">This text is small.</p>
+    <p class="medium-text">This text is medium.</p>
+    <p class="large-text">This text is large.</p>
+    <p class="light">This text is light.</p>
+    <p class="normal">This text is normal weight.</p>
+    <p class="bold">This text is bold.</p>
+    <p class="italic">This text is italicized.</p>
+    <p class="underline">This text is underlined.</p>
+    <p class="uppercase">this text will be transformed to uppercase.</p>
+    <p class="lowercase">THIS TEXT WILL BE TRANSFORMED TO LOWERCASE.</p>
+    <p class="capitalize">this text will be capitalized.</p>
+    <p class="small-caps">this text will be displayed in small caps.</p>
+    <p class="spaced">This paragraph has increased line height for better readability. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    <p class="letter-spacing">This paragraph has increased letter spacing for improved legibility.</p>
+    <p class="overflow">This is a very long text that will demonstrate the text overflow property and how it can be
+        truncated with an ellipsis when it exceeds the width of its container.</p>
+    <p class="word-break">This is a very long word that will demonstrate the word break property and how it can break
+        words inappropriately.</p>
+    <p class="text-align">This paragraph is center-aligned.</p>
+    <p class="word-spacing">This paragraph has increased word spacing for better readability between words.</p>
+    <p class="text-indent">This paragraph has an indented first line for better visual structure and readability.</p>
+    <p class="white-space">This paragraph preserves white space and does not wrap text.</p>
+    <p class="hyphens">This is a very long word that will demonstrate the hyphens property and how it can automatically
+        insert hyphens when breaking words at the end of lines.</p>
+    <p class="ligatures">The office official offered efficient effects.</p>
+</body>
+
+</html>

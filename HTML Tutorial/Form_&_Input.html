@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Input Elements</title>
+</head>
+
+<body>
+    <h1>Various Form Input Elements</h1>
+    <form action="/action.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter Password" /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" /><br />
+
+        <label for="bio">Bio:</label>
+        <input type="text" name="bio" maxlength="150" /><br />
+
+        <label for="subscribe">Subscribe to Youtube Channel:</label>
+        <input type="checkbox" name="subscribe" value="yes" /> Subscribe<br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female<br />
+
+        <label for="country">Country:</label>
+        <select name="country">
+            <option value="us">USA</option>
+            <option value="ia">India</option>
+            <option value="ca">Canada</option>
+        </select><br />
+
+        <label for="comments">Comments:</label><br />
+        <textarea name="comments" rows="4" cols="30"></textarea><br />
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" name="resume" /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" /><br />
+
+        <label for="ageRange">Age (18-100):</label>
+        <input type="number" name="age" min="18" max="100" /><br />
+
+        <label for="volume">Volume (0-100):</label>
+        <input type="range" name="volume" min="0" max="100" /><br />
+
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" id="colorPicker" name="favcolor" /><br />
+
+        <label for="timePicker">Select Time:</label>
+        <input type="time" id="timePicker" name="appt" /><br />
+
+        <label for="datetimePicker">Select Date and Time:</label>
+        <input type="datetime-local" id="datetimePicker" name="meeting" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" /><br />
+
+        <label for="website">Website:</label>
+        <input type="url" name="website" /><br />
+
+        <label for="search">Search:</label>
+        <input type="search" name="query" /><br /><br />
+
+        <button type="submit">Submit</button><br />
+    </form>
+</body>
+
+</html>

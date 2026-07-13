@@ -1,0 +1,37 @@
+<!-- Async Array Mapping: Write an asynchronous function that takes an array of numbers and returns a new array of Promises where each number is multiplied by 2 after a delay of 500 milliseconds. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Async function that returns an array of Promises
+        async function asyncArrayMapping(numbers) {
+            return numbers.map(num => 
+                new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve(num * 2);
+                    }, 500);
+                })
+            );
+        }
+
+        // Example
+        (async () => {
+            const promises = await asyncArrayMapping([1, 2, 3, 4]);
+
+            // Get resolved values
+            const result = await Promise.all(promises);
+
+            console.log(result); // [2, 4, 6, 8]
+        })();
+    </script>
+</body>
+
+</html>

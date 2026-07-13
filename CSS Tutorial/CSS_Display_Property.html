@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property(Internal)</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .inline-box {
+            display: inline;
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .block-box {
+            display: block;
+            border: 2px solid green;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .inline-block-box {
+            display: inline-block;
+            border: 2px solid red;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .grid-box {
+            display: grid;
+            border: 2px solid purple;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .flex-box {
+            display: flex;
+            border: 2px solid orange;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Display Property Example</h1>
+    <div class="container">
+        <div class="inline-box">Inline Box 1</div>
+        <div class="inline-box">Inline Box 2</div>
+        <div class="block-box">Block Box 1</div>
+        <div class="block-box">Block Box 2</div>
+        <div class="inline-block-box">Inline-Block Box 1</div>
+        <div class="inline-block-box">Inline-Block Box 2</div>
+        <div class="grid-box">
+            <div>Grid Item 1</div>
+            <div>Grid Item 2</div>
+            <div>Grid Item 3</div>
+        </div>
+        <div class="flex-box">
+            <div>Flex Item 1</div>
+            <div>Flex Item 2</div>
+            <div>Flex Item 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
