@@ -61,7 +61,7 @@ app.get('/generate', async (req, res) => {
 
         let e = await Employee.create({
             name: getRandom(randomNames), // Random employee name
-            salary: Math.floor(Math.random() * 22000), // Random salary between 0 and 21999
+            salary: Math.floor(Math.random() * 22000) + 10000, // Random salary between 10000 and 30000
             language: getRandom(randomLang), // Random programming language
             city: getRandom(randomCities), // Random city
             isManager: (Math.random() > 0.5) ? true : false // Random manager status
